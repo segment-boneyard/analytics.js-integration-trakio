@@ -1,4 +1,10 @@
 
+1.0.3 / 2016-05-05
+==================
+
+  * remove hardcoded category string
+  * map group to company api
+
 1.0.2 / 2015-06-30
 ==================
 
