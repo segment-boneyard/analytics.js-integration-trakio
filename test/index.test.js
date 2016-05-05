@@ -94,8 +94,8 @@ describe('trak.io', function() {
       });
 
       it('should map category to channel', function() {
-        analytics.page('category', 'name');
-        analytics.called(window.trak.io.channel, 'category');
+        analytics.page('blog', 'name');
+        analytics.called(window.trak.io.channel, 'blog');
       });
 
       it('should prefer a category and name', function() {
