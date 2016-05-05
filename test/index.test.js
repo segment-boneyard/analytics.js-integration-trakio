@@ -182,6 +182,31 @@ describe('trak.io', function() {
       });
     });
 
+    describe('#group', function() {
+      beforeEach(function() {
+        analytics.stub(window.trak.io, 'company_id');
+        analytics.stub(window.trak.io, 'company');
+      });
+
+      it('should send company id', function() {
+        analytics.group('segment');
+        analytics.called(window.trak.io.company_id, 'segment');
+      });
+
+      it('should send company traits', function() {
+        analytics.group({ name: 'segment' });
+        analytics.called(window.trak.io.company, { name: 'segment' });
+      });
+
+      it('should send both company id and traits', function() {
+        analytics.group('seggy123', {
+          name: 'segment'
+        });
+        analytics.called(window.trak.io.company_id, 'seggy123');
+        analytics.called(window.trak.io.company, { name: 'segment' });
+      });
+    });
+
     describe('#alias', function() {
       beforeEach(function() {
         analytics.stub(window.trak.io, 'distinct_id');
