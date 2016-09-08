@@ -1,12 +1,12 @@
 {
-  "name": "@segment/analytics.js-integration-trakio",
-  "description": "The Trakio analytics.js integration.",
+  "name": "@segment/analytics.js-integration-trak-io",
+  "description": "The Trak.io analytics.js integration.",
   "version": "2.0.0",
   "keywords": [
     "analytics.js",
     "analytics.js-integration",
     "segment",
-    "trakio"
+    "trak.io"
   ],
   "main": "lib/index.js",
   "scripts": {
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/segment-integrations/analytics.js-integration-trakio.git"
+    "url": "git+https://github.com/segment-integrations/analytics.js-integration-trak-io.git"
   },
   "author": "Segment <friends@segment.com>",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/segment-integrations/analytics.js-integration-trakio/issues"
+    "url": "https://github.com/segment-integrations/analytics.js-integration-trak-io/issues"
   },
-  "homepage": "https://github.com/segment-integrations/analytics.js-integration-trakio#readme",
+  "homepage": "https://github.com/segment-integrations/analytics.js-integration-trak-io#readme",
   "dependencies": {
     "@segment/alias": "^1.0.1",
     "@segment/analytics.js-integration": "^2.1.0"
